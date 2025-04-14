@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.csproj": "csharp",
+        "iostream": "cpp"
+    }
+}
