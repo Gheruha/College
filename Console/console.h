@@ -1,5 +1,6 @@
 #ifndef console_h
 #define console_h
+using namespace std;
 
-void selectFunctionToRun();
+void selectFunctionToRun(string option);
 #endif

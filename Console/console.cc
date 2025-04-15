@@ -1,7 +1,9 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-void selectFunctionToRun()
+void selectFunctionToRun(string option)
 {
-    cout << "Select function to run...";
+    cout << "Select function to run...\n";
+    cout << option; 
 }
