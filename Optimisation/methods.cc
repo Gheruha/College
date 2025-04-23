@@ -15,7 +15,7 @@ void backtrack(vector<vector<int>> &res, vector<int> &nums, vector<int> &permuta
 
         if (!used[i])
         {
-            // make the choice
+            // make a new choice
             permutation.push_back(nums[i]);
             used[i] = true;
             backtrack(res, nums, permutation, used);
@@ -28,8 +28,8 @@ void backtrack(vector<vector<int>> &res, vector<int> &nums, vector<int> &permuta
 }
 void permutBacktrack()
 {
-    vector<vector<int>> res = {};
     vector<int> nums = {1, 2, 3};
+    vector<vector<int>> res = {};
     vector<int> permutation = {};
     vector<bool> used(nums.size());
     backtrack(res, nums, permutation, used);
@@ -41,4 +41,10 @@ void permutBacktrack()
             cout << num << " ";
         cout << "}\n";
     }
+}
+
+void travelingSalesmanProblem()
+{
+
+    cout << "Travelling Salesman Problem\n";
 }

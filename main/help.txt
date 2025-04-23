@@ -1,1 +1,7 @@
-"-pb" -> will run the permutations backtracking algorithm 
+Help 🔍
+
+FUNCTIONS: 
+"-pb" -> will run the permutations backtracking algorithm
+
+SPECIAL FUNCTIONS:
+"-tsp -b" -> will run the travelling sales man problem (BRUTE FORCE)

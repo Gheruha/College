@@ -27,13 +27,16 @@ int main(int argc, const char *argv[])
             cout << "\n\n";
             while (getline(helpFile, line))
             {
-                cout << line;
+                cout << line << "\n";
             }
             helpFile.close();
         }
-        else
+        else if(argc == 2)
         {
             selectFunctionToRun(option);
+        }
+        else if(argc == 3){
+             selectSpecialFunctionToRun(argc, argv);
         }
     }
 }

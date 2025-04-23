@@ -12,8 +12,18 @@ void selectFunctionToRun(string option)
     {
         permutBacktrack();
     }
+    else if (option == "-tsp -b")
+    {
+        travelingSalesmanProblem();
+    }
     else
     {
         cout << "This option does not exist. Use -help to see all the available options";
+    }
+}
+
+void selectSpecialFunctionToRun(int argc, const char *argv[]){
+    for(int i = 0; i < argc; i++){
+        cout << argv[i] << "\n";
     }
 }
