@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 #include <string>
 #include <vector>
 #include "console.h"
@@ -12,18 +13,19 @@ void selectFunctionToRun(string option)
     {
         permutBacktrack();
     }
-    else if (option == "-tsp -b")
-    {
-        travelingSalesmanProblem();
-    }
     else
     {
         cout << "This option does not exist. Use -help to see all the available options";
     }
 }
 
-void selectSpecialFunctionToRun(int argc, const char *argv[]){
-    for(int i = 0; i < argc; i++){
-        cout << argv[i] << "\n";
+void selectSpecialFunctionToRun(int argc, const char *argv[])
+{
+    string option1 = string(argv[1]);
+    string option2 = string(argv[2]);
+
+    if (option1 == "-tsp" && option2 == "-b")
+    {
+        travelingSalesmanProblem();
     }
 }

@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "terminal.integrated.gpuAcceleration": "off",
         "*.csproj": "csharp",
         "iostream": "cpp",
         "fstream": "cpp",
